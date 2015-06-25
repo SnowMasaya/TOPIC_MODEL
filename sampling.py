@@ -10,7 +10,7 @@ import os.path
 class Sampling:
 
     def __init__(self, xcourps, ycourps):
-        self.iteration = 100000
+        self.iteration = 1000
         self.xcourps = xcourps
         self.ycourps = ycourps
 
