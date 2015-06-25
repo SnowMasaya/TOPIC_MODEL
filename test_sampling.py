@@ -15,9 +15,9 @@ class Testsampling(TestCase):
         init = initilaze_topic_model()
         init.initilize()
         sampleman = Sampling(init.xcorpus, init.ycorpus)
-        sampleman.sampling(init.TOPICS, init.xcounts, init.ycounts, init.docid)
-        print sampleman.xcourps
-        print sampleman.ycourps
+        sampleman.sampling(init.TOPICS, init.xcounts, init.ycounts, init.docid, init.different_word)
+        print sampleman.xcorpus
+        print sampleman.ycorpus
 
 if __name__ == "__main__":
     TestCase.main()

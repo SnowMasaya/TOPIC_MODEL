@@ -17,6 +17,7 @@ class initilaze_topic_model:
         self.topics_vector = numpy.array([])
         self.TOPICS = 7
         self.docid = 1
+        self.different_word = 0
 
     def initilize(self):
         first_time = 1
@@ -27,6 +28,7 @@ class initilaze_topic_model:
             rline = line.rstrip("¥n")
             words = numpy.array(rline.split(" "))
             topics_vector = []
+            self.different_word = set(words)
             for word in words:
                 topic = randint(self.TOPICS) + 1
                 topics_vector.append(topic)
